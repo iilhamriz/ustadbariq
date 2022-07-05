@@ -16,7 +16,7 @@ app.use(express.json());
 app.get("/", (req, res) => res.send("hello"))
 app.use(routes);
 
-const URI = process.env.MONGODB_URL;
+const URI = "mongodb+srv://ilham:ilhamdatabase123@cluster0.yiv3ykp.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(
   URI,
   {
